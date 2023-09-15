@@ -11,6 +11,8 @@
 		69F7F59F2AB4DBD1004E4AC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F7F59E2AB4DBD1004E4AC3 /* ContentView.swift */; };
 		69F7F5A12AB4DBD2004E4AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F7F5A02AB4DBD2004E4AC3 /* Assets.xcassets */; };
 		69F7F5A52AB4DBD2004E4AC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F7F5A42AB4DBD2004E4AC3 /* Preview Assets.xcassets */; };
+		69F7F5AC2AB4E3B0004E4AC3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F7F5AB2AB4E3B0004E4AC3 /* CircleImage.swift */; };
+		69F7F5AE2AB4E4BB004E4AC3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F7F5AD2AB4E4BB004E4AC3 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		69F7F5A02AB4DBD2004E4AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69F7F5A22AB4DBD2004E4AC3 /* Landmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Landmarks.entitlements; sourceTree = "<group>"; };
 		69F7F5A42AB4DBD2004E4AC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69F7F5AB2AB4E3B0004E4AC3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		69F7F5AD2AB4E4BB004E4AC3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,12 @@
 		69F7F59B2AB4DBD1004E4AC3 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				69F7F59C2AB4DBD1004E4AC3 /* LandmarksApp.swift */,
-				69F7F59E2AB4DBD1004E4AC3 /* ContentView.swift */,
-				69F7F5A02AB4DBD2004E4AC3 /* Assets.xcassets */,
 				69F7F5A22AB4DBD2004E4AC3 /* Landmarks.entitlements */,
+				69F7F5AB2AB4E3B0004E4AC3 /* CircleImage.swift */,
+				69F7F59E2AB4DBD1004E4AC3 /* ContentView.swift */,
+				69F7F59C2AB4DBD1004E4AC3 /* LandmarksApp.swift */,
+				69F7F5AD2AB4E4BB004E4AC3 /* MapView.swift */,
+				69F7F5A02AB4DBD2004E4AC3 /* Assets.xcassets */,
 				69F7F5A32AB4DBD2004E4AC3 /* Preview Content */,
 			);
 			path = Landmarks;
@@ -140,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F7F59F2AB4DBD1004E4AC3 /* ContentView.swift in Sources */,
+				69F7F5AE2AB4E4BB004E4AC3 /* MapView.swift in Sources */,
 				69F7F59D2AB4DBD1004E4AC3 /* LandmarksApp.swift in Sources */,
+				69F7F5AC2AB4E3B0004E4AC3 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +277,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -279,10 +288,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.rcmd.Landmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +316,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -317,10 +327,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.rcmd.Landmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
