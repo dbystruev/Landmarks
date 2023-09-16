@@ -21,6 +21,7 @@ struct ContentView_Previews: PreviewProvider {
                  "My Mac"],
                 id: \.self) { deviceName in
             ContentView()
+                .environmentObject(ModelData())
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
